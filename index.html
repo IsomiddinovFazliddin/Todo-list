@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo list</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <h2 class="formTitle">New Note</h2>
+        <form id="myForm" class="modalForm" action="">
+          <input
+            class="inputText"
+            type="text"
+            placeholder="Input your note..."
+          />
+        </form>
+        <div class="btns">
+          <button class="censel">censel</button>
+          <button class="submitBtn" form="myForm" type="submit">apply</button>
+        </div>
+      </div>
+      
+    </div>
+    <h1>TODO LIST</h1>
+    <div class="content">
+      <form action="">
+        <div class="inputSearch">
+          <input class="search" type="text" placeholder="Search note..." />
+          <i class="search fa-solid fa-magnifying-glass"></i>
+        </div>
+      </form>
+      <div class="allBtn">
+        All <i class="searchAllBtn fa-solid fa-chevron-down"></i>
+      </div>
+      <button class="darkBtn">
+        <i class="darkIcon fa-regular fa-moon"></i>
+      </button>
+      <div class="menuBtn">
+        <h3>All</h3>
+        <h3>Complete</h3>
+        <h3>Incomplete</h3>
+      </div>
+    </div>
+    <ol></ol>
+    <div class="col">
+      <button class="addNote"><i class="fa-solid fa-plus"></i></button>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
