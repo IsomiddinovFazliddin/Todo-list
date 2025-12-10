@@ -65,7 +65,7 @@ censel.addEventListener("click", () => {
   modal.style.transform = "scale(0)";
 });
 
-let plans = JSON.parse(localStorage.getItem("plans"));
+let plans = JSON.parse(localStorage.getItem("plans")) || [];
 
 localStorage.setItem("plans", JSON.stringify(plans));
 
